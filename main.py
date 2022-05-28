@@ -9,7 +9,7 @@ def find_anagram(word, anagram):
     if type(word) != str or type(anagram) != str:
         return "Not a string"
     else:
-        return(sorted(word.replace(" ", "").lower())==sorted(anagram.replace(" ", "").lower()))
+        return (sorted(word.replace(" ", "").lower())==sorted(anagram.replace(" ", "").lower()))
 
 print(find_anagram("h e y br o t h e r", "hey bother r")) # --> True
 print(find_anagram("mite", "tiMe")) # --> True
